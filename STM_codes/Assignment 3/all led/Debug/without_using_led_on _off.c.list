@@ -1,5 +1,5 @@
 
-all led.elf:     file format elf32-littlearm
+without_using_led_on _off.c.elf:     file format elf32-littlearm
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn

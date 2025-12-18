@@ -59,8 +59,8 @@ all: main-build
 main-build: alternateledblink.elf secondary-outputs
 
 # Tool invocations
-alternateledblink.elf alternateledblink.map: $(OBJS) $(USER_OBJS) C:\Users\hp\Desktop\internship\IIT-08-A-ARM\ARM_94091_Saniya\ARM_codes\alternateledblink\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "alternateledblink.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\hp\Desktop\internship\IIT-08-A-ARM\ARM_94091_Saniya\ARM_codes\alternateledblink\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alternateledblink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+alternateledblink.elf alternateledblink.map: $(OBJS) $(USER_OBJS) C:\Users\hp\Desktop\internship\ARM_94091_Saniya\STM_codes\Assignment\ 3\alternateledblink\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "alternateledblink.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\hp\Desktop\internship\ARM_94091_Saniya\STM_codes\Assignment 3\alternateledblink\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alternateledblink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -59,8 +59,8 @@ all: main-build
 main-build: ALL\ LED.C.elf secondary-outputs
 
 # Tool invocations
-ALL\ LED.C.elf ALL\ LED.C.map: $(OBJS) $(USER_OBJS) C:\Users\hp\Desktop\internship\IIT-08-A-ARM\ARM_94091_Saniya\ARM_codes\ALL\ LED.C\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "ALL LED.C.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\hp\Desktop\internship\IIT-08-A-ARM\ARM_94091_Saniya\ARM_codes\ALL LED.C\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ALL LED.C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+ALL\ LED.C.elf ALL\ LED.C.map: $(OBJS) $(USER_OBJS) C:\Users\hp\Desktop\internship\ARM_94091_Saniya\STM_codes\Assignment\ 3\ALL\ LED.C\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "ALL LED.C.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\hp\Desktop\internship\ARM_94091_Saniya\STM_codes\Assignment 3\ALL LED.C\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ALL LED.C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

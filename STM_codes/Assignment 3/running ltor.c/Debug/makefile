@@ -59,8 +59,8 @@ all: main-build
 main-build: running\ ltor.c.elf secondary-outputs
 
 # Tool invocations
-running\ ltor.c.elf running\ ltor.c.map: $(OBJS) $(USER_OBJS) C:\Users\hp\Desktop\internship\IIT-08-A-ARM\ARM_94091_Saniya\ARM_codes\running\ ltor.c\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "running ltor.c.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\hp\Desktop\internship\IIT-08-A-ARM\ARM_94091_Saniya\ARM_codes\running ltor.c\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="running ltor.c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+running\ ltor.c.elf running\ ltor.c.map: $(OBJS) $(USER_OBJS) C:\Users\hp\Desktop\internship\ARM_94091_Saniya\STM_codes\Assignment\ 3\running\ ltor.c\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "running ltor.c.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\hp\Desktop\internship\ARM_94091_Saniya\STM_codes\Assignment 3\running ltor.c\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="running ltor.c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
