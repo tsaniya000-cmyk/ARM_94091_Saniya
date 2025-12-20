@@ -1,0 +1,10 @@
+11:26:30 **** Incremental Build of configuration Debug for project ASSIN5_Q1 ****
+make -j8 all 
+arm-none-eabi-size  ASSIN5_Q1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1404	      4	   1564	   2972	    b9c	ASSIN5_Q1.elf
+Finished building: default.size.stdout
+ 
+
+11:26:31 Build Finished. 0 errors, 0 warnings. (took 586ms)
+
