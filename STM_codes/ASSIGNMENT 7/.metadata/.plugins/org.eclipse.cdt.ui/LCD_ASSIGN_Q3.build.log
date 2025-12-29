@@ -1,0 +1,10 @@
+12:39:10 **** Incremental Build of configuration Debug for project LCD_ASSIGN_Q3 ****
+make -j8 all 
+arm-none-eabi-size  LCD_ASSIGN_Q3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8960	     12	   1660	  10632	   2988	LCD_ASSIGN_Q3.elf
+Finished building: default.size.stdout
+ 
+
+12:39:10 Build Finished. 0 errors, 0 warnings. (took 628ms)
+
