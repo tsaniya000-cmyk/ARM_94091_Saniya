@@ -1,0 +1,2 @@
+../Core/Src/mq2.c:21:10:adc_conversion	16	static
+../Core/Src/mq2.c:36:6:gas_led	8	static
