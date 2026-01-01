@@ -1,0 +1,2 @@
+../Core/Src/Buzzer.c:17:10:adc_conversion	16	static
+../Core/Src/Buzzer.c:28:6:gas_buzzer	8	static
